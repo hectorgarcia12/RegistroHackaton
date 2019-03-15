@@ -1,0 +1,71 @@
+body{
+  background-color: #9a9a9a;
+  background-image: url(../img/background-registro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.bg-success {
+    background-color: #4cb8b3!important;
+}
+
+.bg-warning {
+    background-color: #e4e347!important;
+}
+
+.bg-danger {
+    background-color: #c8360f!important;
+}
+
+.contenido {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 22px 24px -12px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 22px 24px -12px rgba(0,0,0,0.52);
+    box-shadow: 0px 22px 24px -12px rgba(0,0,0,0.52);
+}
+
+.btn-primary {
+    background-color: #b0135a!important;
+    border: none;
+}
+
+.btn-primary:hover{
+  color: #ffffff;
+  background-color: #d76594!important;
+}
+
+.titular-registro h1 span{
+      font-weight: 700;
+      -webkit-box-shadow: 0px 17px 24px -13px rgba(0,0,0,0.34);
+      -moz-box-shadow: 0px 17px 24px -13px rgba(0,0,0,0.34);
+      box-shadow: 0px 17px 24px -13px rgba(0,0,0,0.34);
+  }
+
+
+h1{
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+.titular-registro .text-dark{
+  color: #f53756!important;
+  font-weight: 700;
+}
+
+
+.footer-sitio{
+
+
+}
+
+.footer-sitio h3{
+  font-weight: bold;
+  font-size: 2.0rem;
+
+}
+.copyright{
+      color: #ffffff;
+      font-size: 1rem;
+
+}

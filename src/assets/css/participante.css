@@ -1,0 +1,43 @@
+
+
+.registro{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    padding: 5%;
+}
+
+.registro-izquierda{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+.registro-izquierda img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.registro-derecha{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+
+}
+
+.regisro-derecha p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.registro .formulario-registro{
+    padding: 10%;
+    margin-top: 10%;
+}
+
+.registro-encabezado{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
