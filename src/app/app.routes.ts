@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegistrosComponent } from './pages/registros/registros.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 
+
 /* Establecemos las rutas de nuestra aplicación */
 const appRoutes: Routes = [
     { path: 'registros', component: RegistrosComponent },
