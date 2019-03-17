@@ -3,16 +3,14 @@ import { NgModule } from '@angular/core';
 
 /* Componentes */
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
-import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
     declarations: [
-        NopagefoundComponent,
-        FooterComponent
+        NopagefoundComponent
     ],
     exports: [
-        NopagefoundComponent,
-        FooterComponent
+        NopagefoundComponent
     ]
 })
 

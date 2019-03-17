@@ -1,41 +1,62 @@
-<div class="row">
-    <!-- Titular Registro Hackatón 2019 -->
-    <div class="col py-5 text-center titular-registro">
-        <h1 class="text-uppercase text-light">Registro <span class="p-4 bg-light text-dark">Hackatón 2019</span></h1>
-    </div>
+<!DOCTYPE html>
+<html>
 
-    <div class="container ">
-        <div class="row animated zoomInUp align-items-center justify-content-center">
-            <div class="col-md-12">
-                <div class="contenido p-5 bg-light">
-                    <div class="row">
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Titular Registro Hackatón 2019 -->
+            <div class="col py-5 text-center titular-registro">
+                <h1 class="text-uppercase text-light">Registro <span class="p-4 bg-light text-dark">Hackatón 2019</span></h1>
+            </div>
 
-                        <!-- Registro para Participante -->
-                        <div class="col-md-4">
-                            <ul class="list-unstyled mt-4 text-center bg-success pt-1 py-4">
-                                <img src="assets/img/participante.png" style="width: 10rem;" alt="Participante">
-                            </ul>
-                            <a href="registroParticipante.html" class="btn btn-primary btn-block text-uppercase" name="button">Participante</a>
-                        </div>
+            <div class="container ">
+                <div class="row animated zoomInUp align-items-center justify-content-center">
+                    <div class="col-md-6">
+                        <div class="contenido p-5 bg-light">
+                            <div class="row">
 
-                        <!-- Registro para Mentor -->
-                        <div class="col-md-4">
-                            <ul class="list-unstyled text-center mt-4 bg-warning pt-1 py-4">
-                                <img src="assets/img/mentor.png" style="width: 10rem;" alt="Mentor">
-                            </ul>
-                            <a href="registroMentor.html" class="btn btn-primary btn-block text-uppercase" name="button">Mentor</a>
-                        </div>
+                                <!-- Registro para Participante -->
+                                <div class="col-md-12">
+                                    <ul class="list-unstyled mt-4 text-center bg-success pt-1 py-4">
+                                        <img src="assets/img/participante.png" style="width: 10rem;" alt="Participante">
+                                    </ul>
+                                    <a [routerLink]="['/participante']" class="btn btn-primary btn-block text-uppercase">Participante</a>
+                                </div>
 
-                        <!-- Registro para Staff -->
-                        <div class="col-md-4">
-                            <ul class="list-unstyled mt-4 text-center bg-danger pt-1 py-4">
-                                <img src="assets/img/staff.png" style="width: 10rem;" alt="Staff">
-                            </ul>
-                            <a href="registroStaff.html" class="btn btn-primary btn-block text-uppercase" name="button">Staff</a>
+
+
+                                <!-- Registro para Mentor 
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled text-center mt-4 bg-warning pt-1 py-4">
+                                        <img src="assets/img/mentor.png" style="width: 10rem;" alt="Mentor">
+                                    </ul>
+                                    <a href="registroMentor.html" class="btn btn-primary btn-block text-uppercase" name="button">Mentor</a>
+                                </div>
+                            -->
+
+                                <!-- Registro para Staff 
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled mt-4 text-center bg-danger pt-1 py-4">
+                                        <img src="assets/img/staff.png" style="width: 10rem;" alt="Staff">
+                                    </ul>
+                                    <a href="registroStaff.html" class="btn btn-primary btn-block text-uppercase" name="button">Staff</a>
+                                </div>
+                            -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <footer class="footer-sitio pt-1 mt-2 text-light">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="text-center py-2 copyright w-100">Hackatón Zacatecas © {{year}}</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

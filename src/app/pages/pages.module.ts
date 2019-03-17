@@ -1,13 +1,19 @@
 /* Modulos */
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
+import { ArchwizardModule } from 'angular-archwizard';
 
 /* Componentes */
 import { RegistrosComponent } from './registros/registros.component';
+import { ParticipanteComponent } from './participante/participante.component';
+
+
 
 @NgModule({
     declarations: [
-        RegistrosComponent
+        RegistrosComponent,
+        ParticipanteComponent
     ],
 
     exports: [
@@ -15,7 +21,10 @@ import { RegistrosComponent } from './registros/registros.component';
     ],
 
     imports: [
-        SharedModule
+        SharedModule,
+        RouterModule,
+        ArchwizardModule
+
     ]
 
 })

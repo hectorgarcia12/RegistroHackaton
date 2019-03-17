@@ -1,3 +1,10 @@
+body {
+    background-color: #9a9a9a;
+    background-image: url(src/assets/img/background-registro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .titular-registro {
     h1 {
         font-size: 3rem;
@@ -39,5 +46,16 @@
             color: #ffffff;
             background-color: #d76594!important;
         }
+    }
+}
+
+.footer-sitio {
+    h3 {
+        font-weight: bold;
+        font-size: 2.0rem;
+    }
+    .copyright {
+        color: #ffffff;
+        font-size: 1rem;
     }
 }
