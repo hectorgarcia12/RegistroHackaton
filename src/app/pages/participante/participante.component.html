@@ -1,0 +1,536 @@
+<aw-wizard>
+    <!-- Vista de Formulario de Registro (Datos Personales) -->
+    <aw-wizard-step stepTitle="Datos Personales">
+        <!DOCTYPE html>
+        <html>
+
+        <body>
+            <div class="container-fluid registro">
+                <div class="row">
+                    <div class="col-md-12 registro-derecha">
+                        <h3 class="registro-encabezado">Regístro Participante</h3>
+                        <div class="row formulario-registro" style="margin-top:10%;">
+                            <!--ComboBoxes de preguntas-->
+                            <div class="col-md-12">
+                                <fieldset class="scheduler-border">
+                                    <legend class="scheduler-border">Ácerca de tu Proyecto</legend>
+                                    <form>
+                                        <!-- Primera pregunta -->
+                                        <div class="form-group">
+                                            <label for="etapasOpcion">¿En cuál de las siguientes etapas te encuentras?</label>
+                                            <select class="form-control" id="etapasOpcion">
+                              <option>Idea - En búsqueda y creación de una idea de negocio</option>
+                              <option>Prototipado - En el diseño y/o pruebas de prototipo</option>
+                              <option>Modelo de Negocio - Elaborando y/o válidando mi modelo de negocio</option>
+                              <option>Estructura - Estoy en incubación</option>
+                              <option>Creación - Ya inicié mis ventas</option>
+                              <option>Consolidación - Ya logre ventas y mi punto de equilibrio</option>
+                              <option>Crecimiento / Aceleración</option>
+                            </select>
+                                        </div>
+
+                                        <!-- Segunda pregunta -->
+                                        <div class="form-group">
+                                            <label for="sectorOpcion">¿En cuál de los siguientes sectores se encuentra tu proyecto o empresa?</label>
+                                            <select class="form-control" id="sectorOpcion">
+                              <option>Mineria</option>
+                              <option>Agroindustria</option>
+                              <option>Tecnologías de la Información</option>
+                              <option>Industria Manufacturera</option>
+                              <option>Energías Alternativas</option>
+                              <option>Turismo</option>
+                              <option>Comercio</option>
+                              <option>Servicios</option>
+                              <option>Industrias creativas</option>
+                              <option>Otros</option>
+                            </select>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                            </div>
+
+
+                            <!-- Grupo de Datos Personales Participante -->
+                            <div class="col-md-12">
+                                <fieldset class="scheduler-border">
+                                    <legend class="scheduler-border">Datos Personales</legend>
+                                    <form>
+                                        <!-- Nombres y Apellidos -->
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <input type="text" class="form-control" placeholder="Nombre(s) *">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <input type="text" class="form-control" placeholder="Apellido Paterno *">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <input type="text" class="form-control" placeholder="Apellido Materno *">
+                                            </div>
+                                        </div>
+
+                                        <!-- CURP, Correo, Repetir Correo, Contraseña y Repetir Contraseña -->
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <input type="text" class="form-control" placeholder="CURP *">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <input type="email" class="form-control" placeholder="Correo electrónico *">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <input type="email" class="form-control" placeholder="Repetir correo electrónico *">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <input type="password" class="form-control" placeholder="Contraseña *">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <input type="password" class="form-control" placeholder="Repetir contraseña *">
+                                            </div>
+                                        </div>
+                                        <!-- Identificación Oficial, Edad y Fecha de Nacimiento -->
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label for="opcion">Identificación Oficial</label>
+                                                <select class="form-control" id="opcion">
+                                <option>INE</option>
+                                <option>Pasaporte</option>
+                                <option>CURP</option>
+                                <option>Cartilla Militar</option>
+                                <option>Licencia Conductor</option>
+                                <option>Identificación Escolar</option>
+                                <option>Otro</option>
+                              </select>
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="opcion">Edad</label>
+                                                <select class="form-control" id="opcion">
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                              </select>
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <label for="nacimiento">Fecha de nacimiento</label>
+                                                <input type="date" class="form-control" placeholder="Fecha de nacimiento *" value="" id="nacimiento" />
+                                            </div>
+                                        </div>
+
+                                        <!-- Foto identificación Oficial y Foto Personal -->
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="foto">Identificación Oficial (Legible ambos lados)</label>
+                                                <input type="file" class="form-control-file" id="foto">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="fotoPersonal">Foto Personal</label>
+                                                <input type="file" class="form-control-file" id="fotoPersonal">
+                                            </div>
+
+
+                                            <div class="form-group col-md-4">
+                                                <input type="radio" name="genero" value="Hombre">
+                                                <span> Hombre </span>
+
+                                                <input type="radio" name="genero" value="Mujer">
+                                                <span>Mujer</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                          /<a [routerLink]="['/registros']" type="submit" class="btn btn-success btn-block ">Regresar</a>
+                        -->
+                                        <div class="d-flex justify-content-lg-end flex-column flex-sm-row">
+                                            <button type="button" class="btn btn-primary" awNextStep>Siguiente</button>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+
+        </html>
+    </aw-wizard-step>
+
+
+
+    <!-- Vista de Formulario de Registro (Datos Domicilio) -->
+    <aw-wizard-step stepTitle="Datos Domicilio" awOptionalStep>
+        <!DOCTYPE html>
+        <html lang="es">
+
+        <body>
+            <div class="container-fluid registro">
+                <div class="row">
+                    <div class="col-md-12 registro-derecha">
+                        <div class="row formulario-registro">
+                            <div class="col-md-12">
+                                <fieldset class="scheduler-border">
+                                    <legend class="scheduler-border">Datos Domicilio</legend>
+                                    <form>
+                                        <!-- Estado, Municipio, Tipo de Vialidad, Asentamiento, Nombre de vialidad
+                        Número exterior, Número interior, Código Postal, Localidad, Descripción y
+                        Entre vialidades -->
+                                        <div class="form-row">
+                                            <div class="form-group col-md-3">
+                                                <label for="opcion">Estado</label>
+                                                <select class="form-control" id="opcion">
+                              <option value="DIF">Distrito Federal</option>
+                              <option value="AGS">Aguascalientes</option>
+                              <option value="BCN">Baja California</option>
+                              <option value="BCS">Baja California Sur</option>
+                              <option value="CAM">Campeche</option>
+                              <option value="CHP">Chiapas</option>
+                              <option value="CHI">Chihuahua</option>
+                              <option value="COA">Coahuila</option>
+                              <option value="COL">Colima</option>
+                              <option value="DUR">Durango</option>
+                              <option value="GTO">Guanajuato</option>
+                              <option value="GRO">Guerrero</option>
+                              <option value="HGO">Hidalgo</option>
+                              <option value="JAL">Jalisco</option>
+                              <option value="MEX">México</option>
+                              <option value="MIC">Michoacán</option>
+                              <option value="MOR">Morelos</option>
+                              <option value="NAY">Nayarit</option>
+                              <option value="NLE">Nuevo León</option>
+                              <option value="OAX">Oaxaca</option>
+                              <option value="PUE">Puebla</option>
+                              <option value="QRO">Querétaro</option>
+                              <option value="ROO">Quintana Roo</option>
+                              <option value="SLP">San Luis Potosí</option>
+                              <option value="SIN">Sinaloa</option>
+                              <option value="SON">Sonora</option>
+                              <option value="TAB">Tabasco</option>
+                              <option value="TAM">Tamaulipas</option>
+                              <option value="TLX">Tlaxcala</option>
+                              <option value="VER">Veracruz</option>
+                              <option value="YUC">Yucatán</option>
+                              <option value="ZAC">Zacatecas</option>
+                            </select>
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label for="opcion">Municipio</label>
+                                                <select class="form-control" id="opcion">
+                              <option>Zacatecas</option>
+                              <option>Guadalupe</option>
+                              <option>Jerez</option>
+                              
+                            </select>
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label for="opcion">Tipo de Vialidad</label>
+                                                <select class="form-control" id="opcion">
+                              <option>Ampliación</option>
+                              <option>Andador</option>
+                              <option>Avenida</option>
+                              <option>Boulevard</option>
+                              <option>Calle</option>
+                              <option>Callejón</option>
+                              <option>Calzada</option>
+                              <option>Cerrada</option>
+                              <option>Circuito</option>
+                              <option>Circunvalación</option>
+                              <option>Continuación</option>
+                              <option>Corredor</option>
+                              <option>Diagonal</option>
+                              <option>Eje Vial</option>
+                              <option>Pasaje</option>
+                              <option>Peatonal</option>
+                              <option>Periférico</option>
+                              <option>Privada</option>
+                              <option>Prolongación</option>
+                              <option>Retorno</option>
+                              <option>Viaducto</option>
+                              <option>Ninguno</option>
+                              
+                            </select>
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label for="opcion">Asentamiento</label>
+                                                <select class="form-control" id="opcion">
+                              <option>Aeropuerto</option>
+                              <option>Ampliación</option>
+                              <option>Barrio</option>
+                              <option>Cantón</option>
+                              <option>Ciudad</option>
+                              <option>Ciuidad Industrial</option>
+                              <option>Colonia</option>
+                              <option>Condominio</option>
+                              <option>Conjunto Habitacional</option>
+                              <option>Corredor Industrial</option>
+                              <option>Coto</option>
+                              <option>Cuartel</option>
+                              <option>Ejido</option>
+                              <option>Ex-hacienda</option>
+                              <option>Fracción</option>
+                              <option>Fraccionamiento</option>
+                              <option>Granja</option>
+                              <option>Hacienda</option>
+                              <option>Ingenio</option>
+                              <option>Manzana</option>
+                              <option>Paraje</option>
+                              <option>Parque Industrial</option>
+                              <option>Privada</option>
+                              <option>Prolongación</option>
+                              <option>Pueblo</option>
+                              <option>Puerto</option>
+                              <option>Ranchería</option>
+                              <option>Rancho</option>
+                              <option>Región</option>
+                              <option>Residencial</option>
+                              <option>Rinconada</option>
+                              <option>Sección</option>
+                              <option>Sector</option>
+                              <option>Supermanzana</option>
+                              <option>Unidad</option>
+                              <option>Unidad Habitacional</option>
+                              <option>Villa</option>
+                              <option>Zona Federal</option>
+                              <option>Zona Industrial</option>
+                              <option>Zona Militar</option>
+                              <option>Zona Naval</option>
+                              
+                            </select>
+                                            </div>
+
+                                            <div class="form-group col-md-4">
+                                                <input type="text" class="form-control" placeholder="Nombre de vialidad *">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <input type="text" class="form-control" placeholder="Número exterior *">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <input type="text" class="form-control" placeholder="Número interior *">
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <input type="text" class="form-control" placeholder="Código Postal *">
+                                            </div>
+
+                                            <div class="form-group col-md-2">
+                                                <input type="text" class="form-control" placeholder="Localidad *">
+                                            </div>
+                                            <div class="form-group col-md-5">
+                                                <input type="text" class="form-control" placeholder="Descripción de la ubicación *">
+                                            </div>
+                                            <div class="form-group col-md-5">
+                                                <input type="text" class="form-control" placeholder="Entre vialidades *">
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex justify-content-lg-between flex-column flex-sm-row">
+                                            <button type="button" class="btn btn-danger" awPreviousStep>Anterior</button>
+                                            <br />
+                                            <button type="button" class="btn btn-primary" awNextStep>Siguiente</button>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+
+        </html>
+    </aw-wizard-step>
+
+    <!-- Vista de Formulario de Registro (Estudio Socioeconómico) -->
+    <aw-wizard-step stepTitle="Estudio Socioeconómico">
+        <!DOCTYPE html>
+        <html lang="es">
+
+        <body>
+            <div class="container-fluid registro">
+                <div class="col-md-12 registro-derecha">
+                    <div class="row formulario-registro">
+                        <div class="col-md-12">
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">Estudio Socioeconómico</legend>
+                                <form>
+                                    <!-- Estado Civil, Jefe de Familia, Ocupación Actual, Ingreso Mensual,
+                      Número de Integrantes de Familia, Tipo de Vivienda, Número de Habitantes en la Vivienda,
+                      Tipo de Seguridad Social, Discapacidad, Nivel de Estudios,
+                      Indica si te encuentras en alguno de estos grupos vulnerables y
+                      ¿Eres beneficiario colectivo? -->
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <label for="opcion">Estado Civil</label>
+                                            <select class="form-control" id="opcion">
+                            <option value>Soltero(a)</option>
+                            <option value>Casado(a)</option>
+                            <option value>Divorciado(a)</option>
+                            <option value>Viuda(a)</option>
+                            <option value>Unión Libre</option>
+                          </select>
+                                        </div>
+
+                                        <div class="form-group col-md-3">
+                                            <label for="opcion">Jefe(a) de Familia</label>
+                                            <select class="form-control" id="opcion">
+                            <option value>Sí</option>
+                            <option value>No</option>
+                          </select>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="opcion">Ocupación Actual</label>
+                                            <select class="form-control" id="opcion">
+                            <option value>Hogar</option>
+                            <option value>Comerciante</option>
+                            <option value>Profesiones Varias</option>
+                            <option value>Desempleado</option>
+                            <option value>Jubilado/Pensionado</option>
+                            <option value>Empleado</option>
+                            <option value>Estudiante</option>
+                            <option value>Obrero</option>
+                            <option value>Diversos</option>
+                            <option value>Campo</option>
+                            <option value>Oficios Varios</option>
+                            <option value>Empresario</option>
+                          </select>
+                                        </div>
+
+                                        <div class="form-group col-md-3">
+                                            <label for="opcion">Ingreso Mensual</label>
+                                            <select class="form-control" id="opcion">
+                            <option value>Ninguno</option>
+                            <option value>Menos del Salario Mínimo</option>
+                            <option value>1 Vez el Salario Mínimo</option>
+                            <option value>2 Veces el Salario Mínimo</option>
+                            <option value>3 Veces el Salario Mínimo</option>
+                            <option value>4 Veces el Salario Mínimo</option>
+                            <option value>5 Veces el Salario Mínimo ó Más</option>
+                          </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="opcion">Número de Integrantes de Familia</label>
+                                            <select class="form-control" id="opcion">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>Más de 6</option>
+                          </select>
+                                        </div>
+
+                                        <div class="form-group col-md-3">
+                                            <label for="opcion">Tipo de Vivienda</label>
+                                            <select class="form-control" id="opcion">
+                            <option>Casa Propia</option>
+                            <option>Casa Rentada</option>
+                            <option>Casa Prestada</option>
+                          </select>
+                                        </div>
+
+                                        <div class="form-group col-md-4">
+                                            <label for="opcion">Número de Habitantes en la Vivienda</label>
+                                            <select class="form-control" id="opcion">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>Más de 6</option>
+                          </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <label for="opcion">Tipo de Seguridad Social</label>
+                                            <select class="form-control" id="opcion">
+                            <option>Ninguno</option>
+                            <option>IMSS</option>
+                            <option>ISSSTE</option>
+                            <option>Seguro Popular</option>
+                            <option>PEMEX</option>
+                            <option>Otro</option>
+                          </select>
+                                        </div>
+
+
+                                        <div class="form-group col-md-4">
+                                            <label for="opcion">Discapacidad</label>
+                                            <select class="form-control" id="opcion">
+                            <option>Ninguna</option>
+                            <option>Dificultad para caminar o moverse</option>
+                            <option>Dificultad para ver</option>
+                            <option>Dificultad para oír</option>
+                            <option>Dificultad para hablar o comunicarse</option>
+                            <option>Limitación Mental</option>
+                            <option>Dificultad para atender el cuidado personal</option>
+                            <option>Dificultad para aprender</option>
+                          </select>
+                                        </div>
+
+                                        <div class="form-group col-md-3">
+                                            <label for="opcion">Nivel de Estudios</label>
+                                            <select class="form-control" id="opcion">
+                            <option>Ninguno</option>
+                            <option>Primaria</option>
+                            <option>Secundaria</option>
+                            <option>Preparatoria</option>
+                            <option>Carrera Técnica</option>
+                            <option>Licenciatura</option>
+                            <option>Posgrado - Especialidad</option>
+                            <option>Posgrado - Maestría</option>
+                            <option>Posgrado - Doctorado</option>
+                            <option>Posgrado - Pos Doctorado</option>
+                          </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="opcion">Indica si te encuentras en alguno de
+                            estos grupos vulnerables
+                          </label>
+                                            <select class="form-control" id="opcion">
+                            <option>Madres Solteras</option>
+                            <option>Jefas de Familia</option>
+                            <option>Mujeres en situación de maltrato o violencia</option>
+                            <option>Menores de edad en situación de riesgo</option>
+                            <option>Personas con discapacidad</option>
+                            <option>Ninguno</option>
+                          </select>
+                                        </div>
+
+                                        <div class="form-group col-md-3">
+                                            <label for="opcion">¿Eres beneficiario colectivo?</label>
+                                            <select class="form-control" id="opcion">
+                            <option>Sí</option>
+                            <option>No</option>
+                          </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-lg-between flex-column flex-sm-row">
+                                        <button type="button" class="btn btn-danger" awPreviousStep>Anterior</button>
+                                        <br/>
+                                        <button type="button" class="btn btn-success" (click)="finishFunction()">Regístrarme</button>
+                                    </div>
+                                </form>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+
+        </html>
+    </aw-wizard-step>
+</aw-wizard>
