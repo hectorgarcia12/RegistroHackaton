@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ParticipanteService} from '../../services/service.index';
+
 
 @Component({
   selector: 'app-participante',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParticipanteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _gameService: ParticipanteService) { }
 
   ngOnInit() {
+    this._gameService.obtenerParticipantes().subscribe (
+      res => console.log(res),
+      err => console.error(err)
+    );
   }
 
 }

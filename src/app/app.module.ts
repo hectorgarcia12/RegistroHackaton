@@ -5,6 +5,7 @@ import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import { ServiceModule } from './services/service.module';
 import { ArchwizardModule } from 'angular-archwizard';
+import { HttpClientModule } from '@angular/common/http';
 
 /* Rutas */
 import { APP_ROUTES } from './app.routes';
@@ -25,7 +26,8 @@ import { AppComponent } from './app.component';
     PagesModule,
     SharedModule,
     ServiceModule,
-    ArchwizardModule
+    ArchwizardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

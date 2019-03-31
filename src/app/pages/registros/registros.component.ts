@@ -9,7 +9,7 @@ export class RegistrosComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+
 
 }
